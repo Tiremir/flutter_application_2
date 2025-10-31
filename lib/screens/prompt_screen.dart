@@ -40,6 +40,6 @@ class _PromptScreenState extends State<PromptScreen> {
 
   void _onSubmit(String prompt) {
     if (prompt.isEmpty) return;
-    context.go('/result/$prompt');
+    context.push('/result/$prompt');
   }
 }
